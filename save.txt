@@ -1,0 +1,17 @@
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "https://en.wikipedia.org/wiki/Anime",
+            "resourceTypes": ["main_frame"]
+        }
+    }
+
+
+There must be some problem with the type of regex used in the rule. Got to change it!
+This is the command to check the local storage from the console 
+    
+--> chrome.declarativeNetRequest.getDynamicRules(rules => console.log(rules));

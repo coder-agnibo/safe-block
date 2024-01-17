@@ -1,0 +1,30 @@
+{
+    "name": "Safe Block",
+    "version": "1.0",
+    "description": "Safe Block is a user-friendly Chrome extension designed to make the internet a safer place for children. It empowers parents and guardians with the tools they need to block access to specific websites, ensuring that kids can browse the web without stumbling upon inappropriate content.",
+    "permissions": ["declarativeNetRequest", "declarativeNetRequestFeedback", "storage", "browsingData"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    },
+    "action": {
+        "default_popup": "popUp.html",
+        "default_popup_width": 600,  
+        "default_popup_height": 600
+     },
+    "icons": {
+        "16": "icons/logo_16x16.png",
+        "48": "icons/logo_48x48.png",
+        "128": "icons/logo_128x128.png"
+    },
+    "manifest_version": 3
+}

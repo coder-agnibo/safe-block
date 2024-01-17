@@ -1,0 +1,104 @@
+body {
+    width: 100%;
+    height: 30%;
+    /* display: flex; */
+    background-color: black;
+    color: #fff;
+    font-family: "Courier New", Courier, monospace;
+    justify-items: center;
+}
+
+
+#image {
+margin-left: 46px;
+}
+
+
+input {
+    margin: 0 0 1rem 0;
+    border-radius: 2px;
+    border: 0px;
+    border-color: aliceblue;
+    font-size: 18;
+    transition: all 0.5 ease;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24;
+}
+
+#blockButton {
+    position: relative;
+    margin-right: 1.5rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem;
+    font-size: large;
+    border-radius: 10%;
+    left: 2.5%;
+    margin-left: 15px;
+}
+
+#unblockButton {
+    position: relative;
+    margin-left: 1.5rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem;
+    font-size: large;
+    border-radius: 10%;
+    right: 0.3%;
+    margin-right: 33px;
+}
+
+#reset {
+    position: relative;
+    margin-top: 0.7rem;
+    margin-right: 1.3rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10%;
+    font-size: large;
+    padding: 0.4rem; 
+    left: 5.5%;
+    margin-left: 60px;
+} 
+
+#blockButton:hover {
+    background-color: #fe646f;
+    color: white;
+    border: 2px;
+    border-color: #fff;
+  }
+
+#unblockButton:hover {
+    background-color: #fe646f;
+    color: white;
+    border: 2px;
+    border-color: #fff;
+}
+
+#reset:hover {
+    background-color: #fe646f;
+    color: white;
+    border: 2px;
+    border-color: #fff;
+}
+
+input[type=text]:focus {
+    background-color: #fe646f;
+    color: white;
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;  
+}
+
+input:focus::placeholder {
+    color: white;
+    border: 1px;
+    border-color: #fff; /* Color of placeholder on focus */
+}
